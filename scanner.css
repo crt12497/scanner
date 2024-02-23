@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e0f2f1; /* Light blue background color */
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:last-child {
+  margin-right: 0;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  /* For tablets and larger devices */
+  .container {
+    max-width: 768px;
+    margin: 0 auto; /* Center the container */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* For mobile devices */
+  #startScan {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999; /* Ensure the button is above other content */
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #preview {
+    display: none; /* Hide the video element on mobile */
+  }
+}
